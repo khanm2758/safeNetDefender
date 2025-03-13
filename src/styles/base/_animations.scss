@@ -1,0 +1,67 @@
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100);
+    }
+    60% {
+    }
+    80% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translate(0px);
+    }
+  }
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100);
+    }
+    60% {
+    }
+    80% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translate(0px);
+    }
+  }
+  
+  @keyframes moveInBottom {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  //outline animation
+  /* Define the keyframes for the outline animation */
+@keyframes outline-animation {
+  0% {
+    text-shadow: 
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000; 
+  }
+  50% {
+    text-shadow: 
+      -2px -2px 0 #000,  
+       2px -2px 0 #000,
+      -2px  2px 0 #000,
+       2px  2px 0 #000; 
+  }
+  100% {
+    text-shadow: 
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000; 
+  }
+}
+
+

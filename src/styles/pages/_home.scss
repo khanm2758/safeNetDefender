@@ -1,0 +1,175 @@
+/* major properties are going to use
+1 background-clip
+2 transform
+3 outline-offset with outline */
+
+// About section
+.section-about {
+  background-color: $color-gray-light;
+  margin-top: -20vh;
+  padding: 25rem 0;
+}
+
+// Feature section
+.section-feature {
+  padding: 20rem 0;
+  margin-top: 30rem;
+  background: linear-gradient(
+      to left top,
+      rgba(2, 62, 138, 0.4),
+      rgba(03, 04, 94, 0.8)
+    ),
+    url("https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+/* 
+1 perspective
+2 backface-visibility
+3 background-blend-mode
+4 box-decoration-break
+ */
+// product tour section
+.product-tour {
+  background-color: $color-gray-light;
+
+  padding: 20rem 0 70rem 0;
+}
+
+// story section
+
+/* 1 Make text flow around shapes with "shape-outside" & "float" property
+2 apply filter to a image by "filter" property
+3 using "object-fit"
+4 use general video as a background video to fit entire section */
+
+.story-section {
+  padding: 15rem 0;
+  position: relative;
+
+  .row {
+    margin-bottom: 6rem;
+  }
+}
+
+//Registration section
+/*  
+1. ::input-placeholder
+2. :focus
+3. :invalid
+4. :placeholder-shown
+5. :checked
+6. custom radio button 
+7. implement solid color gradient
+8. General and adjacent sibling selector 
+*/
+
+.authentication-section {
+  background: linear-gradient(
+    125deg,
+    rgba($color-blue-light-dark, 1) 9%,
+    rgba($color-blue-light, 1) 9%,
+    rgba($color-blue-light, 1) 91%,
+    rgba($color-blue-light-dark, 1) 91%
+  );
+  padding: 15rem 0;
+}
+.authenticate {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url("https://images.pexels.com/photos/333837/pexels-photo-333837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: 100%;
+  background-position: 50% 88%;
+  height: 60vh;
+  padding: 4rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+  &__form {
+    width: 50%;
+    padding: 2rem;
+  }
+}
+
+
+
+
+// footer section
+
+.footer {
+  padding: 5rem 0;
+  background-color: #333;
+  height: 50rem;
+  &__logo-box {
+    color: $color-blue-light;
+    
+  }
+
+  &__navigation {
+    float: left;
+    border-top: 1px solid $color-blue-dark;
+    height: 67%;
+    border-left: 1px solid $color-blue-dark;
+    padding: 1rem;
+    box-shadow: 0 1rem 1rem rgba($color-blue-dark, 0.12);
+  }
+  &__list {
+    list-style: none;
+    padding-top: 6rem;
+  }
+  &__item {
+    display: inline-block;
+  }
+  &__item:not(:last-child) {
+    margin-right: 2rem;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-gray-light-dark;
+      text-decoration: none;
+      font-size: $default-font-size;
+      text-transform: capitalize;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-white;
+      box-shadow: 0 1rem 2rem rgba($color-blue-dark, 0.4);
+      transform: scale(1.3) rotateY(40deg);
+    }
+  }
+
+  &__copyright {
+    color: #f0efef;
+    line-height: 1.7;
+    font-size: 1.5rem;
+    float: right;
+    border-top: 1px solid $color-blue-dark;
+    border-right: 1px solid $color-blue-dark;
+    text-align: justify;
+    box-shadow: 0 1rem 1rem rgba($color-blue-dark, 0.3);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+
+    span {
+      color: rgba($color-blue-light, 1);
+      box-shadow: 0 0.7rem 2rem rgba($color-blue-dark, 0.3);
+      transform: scale(1.3);
+      text-transform: capitalize;
+    }
+  }
+}

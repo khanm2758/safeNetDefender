@@ -1,0 +1,52 @@
+/*///////////\ Header Section \///////////*/
+
+/* root block of header section*/
+.header {
+  height: 95vh;
+  background: linear-gradient(
+      to left top,
+      rgba(2, 62, 138, 0.4),
+      rgba(03, 04, 94, 0.8)
+    ),
+    url("../img/pexels-njeromin-27051404.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  /* logo section*/
+  &__logo-box {
+    position: absolute;
+    color: $color-blue-dark;
+    top: 6rem;
+    left: 6rem;
+    font-family: "lato";
+
+    
+  }
+  &__logo-box > h1 {
+   
+    
+    display: inline-block;
+   
+  }
+
+  &__logo-box > .safeNet-logo--position{
+    
+    
+  }
+
+  /* header typography section*/
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+
+
+

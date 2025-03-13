@@ -1,0 +1,72 @@
+// @use '../abstracts/variables' as *;
+body {
+  font-family: "lato";
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-dark;
+}
+
+// header portion
+.heading-primary {
+  text-transform: capitalize;
+
+  &__main {
+    color: $color-gray-light-dark;
+    font-size: 6rem;
+    letter-spacing: 2rem;
+    display: block;
+    text-shadow: -1px -1px 0 #7466f1, 1px -1px 0 #5542fa, -1px 1px 0 #000000,
+      1px 1px 0 #000000;
+
+    font-weight: 300;
+    word-spacing: -3rem;
+    animation-name: moveInLeft;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+  }
+  &__sub {
+    color: $color-blue-light;
+    letter-spacing: 17.5px;
+    font-weight: 400;
+    font-size: 27px;
+    display: block;
+    text-shadow: -1px -1px 0 #7466f1, 1px -1px 0 #5542fa, -1px 1px 0 #000000,
+      1px 1px 0 #000000;
+    animation-name: moveInRight;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+  }
+}
+
+// About section portion
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    $color-blue-light,
+    $color-blue-dark
+  );
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  &:hover {
+    transform: skewX(14deg) scale(1.1);
+  }
+}
+
+.product-heading {
+  font-size: $default-font-size;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.product-description {
+  font-size: $default-font-size;
+  text-align: justify;
+  
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
