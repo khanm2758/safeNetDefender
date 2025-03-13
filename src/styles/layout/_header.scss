@@ -8,7 +8,7 @@
       rgba(2, 62, 138, 0.4),
       rgba(03, 04, 94, 0.8)
     ),
-    url("../img/pexels-njeromin-27051404.jpg");
+    url("../../../img/pexels-njeromin-27051404.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,19 +22,12 @@
     top: 6rem;
     left: 6rem;
     font-family: "lato";
-
-    
   }
   &__logo-box > h1 {
-   
-    
     display: inline-block;
-   
   }
 
-  &__logo-box > .safeNet-logo--position{
-    
-    
+  &__logo-box > .safeNet-logo--position {
   }
 
   /* header typography section*/
@@ -46,7 +39,3 @@
     text-align: center;
   }
 }
-
-
-
-
