@@ -20,6 +20,7 @@ import "./styles/component/_forms.scss";
 // layout folder
 import "./styles/layout/_header.scss";
 import "./styles/layout/_grid.scss";
+import "./styles/layout/_navigation.scss";
 // pages folder
 import "./styles/pages/_home.scss";
 //themes folder (if needed)
