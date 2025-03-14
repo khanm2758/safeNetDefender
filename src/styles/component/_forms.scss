@@ -85,14 +85,11 @@
 
         &::after{
            content: "";
+           @include centerInBlock;
            width: 1rem;
            height: 1rem;
            border-radius: 50%;
            display: block;
-           position: absolute;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%);
            background-color: $color-blue-dark;
            opacity: 0;
            padding: .7rem;

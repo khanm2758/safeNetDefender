@@ -2,8 +2,8 @@
 import "./styles/main.scss";
 
 //abstracts folder
-import "./styles/abstracts/_functions.scss";
-import "./styles/abstracts/_mixins.scss";
+//import "./styles/abstracts/_mixins.scss";
+//import "./styles/abstracts/_functions.scss";
 //base folder
 import "./styles/base/_animations.scss";
 import "./styles/base/_base.scss";
