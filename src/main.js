@@ -17,6 +17,7 @@ import "./styles/component/_cards.scss";
 import "./styles/component/_story.scss";
 import "./styles/component/_bg-video.scss";
 import "./styles/component/_forms.scss";
+import "./styles/component/_popup.scss";
 // layout folder
 import "./styles/layout/_header.scss";
 import "./styles/layout/_grid.scss";
