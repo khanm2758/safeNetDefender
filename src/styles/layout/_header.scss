@@ -3,6 +3,7 @@
 /* root block of header section*/
 .header {
   height: 95vh;
+  width: 100vw;
   background: linear-gradient(
       to left top,
       rgba(2, 62, 138, 0.4),
@@ -22,13 +23,28 @@
     top: 6rem;
     left: 6rem;
     font-family: "lato";
-  }
-  &__logo-box > h1 {
-    display: inline-block;
-  }
 
-  &__logo-box > .safeNet-logo--position {
+    
+
+
+  
   }
+  &__logo--position{
+    font-size: 6rem;
+    @include respond(max-393){
+      font-size: 5rem;
+    }
+  }
+  &__logo--title{
+    display: inline-block;
+    font-size: 2.7rem;
+    @include respond(max-393){
+      font-size: 2rem;
+    }
+  }
+ 
+
+ 
 
   /* header typography section*/
   &__text-box {

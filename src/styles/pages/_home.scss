@@ -8,6 +8,10 @@
   background-color: $color-gray-light;
   margin-top: -20vh;
   padding: 25rem 0;
+
+  @include respond(tab-port-max-900){
+    margin-top: -8vh;
+  }
 }
 
 // Feature section
