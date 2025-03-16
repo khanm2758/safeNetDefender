@@ -3,7 +3,7 @@
 /* root block of header section*/
 .header {
   height: 95vh;
-  width: 100vw;
+
   background: linear-gradient(
       to left top,
       rgba(2, 62, 138, 0.4),
@@ -11,7 +11,7 @@
     ),
     url("../../../img/pexels-njeromin-27051404.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  //background-repeat: no-repeat;
   background-position: center;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -24,40 +24,33 @@
     left: 6rem;
     font-family: "lato";
 
-    @include respond(max-600){
-      
+    @include respond(max-600) {
       left: 3rem;
     }
-    @include respond(max-393){
+    @include respond(max-393) {
       left: 3rem;
     }
-
-
-  
   }
-  &__logo--position{
+  &__logo--position {
     font-size: 6rem;
 
-    @include respond(max-600){
+    @include respond(max-600) {
       font-size: 5.2rem;
     }
-    @include respond(max-393){
+    @include respond(max-393) {
       font-size: 5rem;
     }
   }
-  &__logo--title{
+  &__logo--title {
     display: inline-block;
     font-size: 2.7rem;
-    @include respond(max-600){
+    @include respond(max-600) {
       font-size: 2.2rem;
     }
-    @include respond(max-393){
+    @include respond(max-393) {
       font-size: 2rem;
     }
   }
- 
-
- 
 
   /* header typography section*/
   &__text-box {
