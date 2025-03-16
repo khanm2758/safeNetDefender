@@ -40,6 +40,9 @@ body {
      
       
     }
+    @include respond(max-360){
+      font-size: 2rem;
+    }
 
   }
   &__sub {
@@ -64,6 +67,9 @@ body {
       font-size: 1.6rem;
      
       
+    }
+    @include respond(max-360){
+      font-size: 1.5rem;
     }
   }
 }

@@ -14,9 +14,16 @@
     z-index: 4;
     cursor: pointer;
 
+    @include respond(max-600){
+      width: 5rem;
+      height: 5rem;
+      right: 4rem;
+    }
+
     @include respond(max-393){
       width: 5rem;
       height: 5rem;
+      right: 4rem;
     }
    
   }
@@ -118,6 +125,9 @@
         display: inline-block;
         transition: all .3s;
 
+        @include respond(max-600){
+           width: 2.7rem
+        }
         @include respond(max-393){
           width: 2.7rem;
         }
@@ -133,12 +143,18 @@
 
     &::before{
         top: -.7rem;
+        @include respond(max-600){
+          top: -.5rem;
+       }
         @include respond(max-393){
           top: -.5rem;
         }
     }
     &::after{
         top: .9rem;
+        @include respond(max-600){
+          top: .8rem;
+       }
         @include respond(max-393){
           top: .8rem;
         }
