@@ -35,9 +35,10 @@
         text-transform: uppercase;
         font-size: 1.7rem;
         text-align: center;
-        opacity: 0;
+        opacity: 1;
         transition: all 0.5s;
         backface-visibility: hidden;
+       transform: translate(-50%, 222%);
     }
 
     &__text{
