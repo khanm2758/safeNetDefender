@@ -115,6 +115,10 @@
   padding: 5rem 0;
   background-color: #333;
   height: 50rem;
+
+  @include respond(tab-port-max-900){
+     height: 74rem;
+  }
   &__logo-box {
     color: $color-blue-light;
     
@@ -123,10 +127,14 @@
   &__navigation {
     float: left;
     border-top: 1px solid $color-blue-dark;
-    height: 67%;
+    height: 15rem;
     border-left: 1px solid $color-blue-dark;
     padding: 1rem;
     box-shadow: 0 1rem 1rem rgba($color-blue-dark, 0.12);
+    width: 100%;
+    @include respond(tab-port-max-900){
+      width: 100%
+    }
   }
   &__list {
     list-style: none;
@@ -143,7 +151,7 @@
     &:visited {
       color: $color-gray-light-dark;
       text-decoration: none;
-      font-size: $default-font-size;
+      font-size: 1.5rem;
       text-transform: capitalize;
       transition: all 0.3s;
       display: inline-block;
@@ -159,8 +167,8 @@
 
   &__copyright {
     color: #f0efef;
-    line-height: 1.7;
-    font-size: 1.5rem;
+    line-height: 1.5;
+    font-size: 1.4rem;
     float: right;
     border-top: 1px solid $color-blue-dark;
     border-right: 1px solid $color-blue-dark;
@@ -168,6 +176,8 @@
     box-shadow: 0 1rem 1rem rgba($color-blue-dark, 0.3);
     padding: 1rem 2rem;
     margin-bottom: 2rem;
+    width: 100%;
+    padding: 2.2rem;
 
     span {
       color: rgba($color-blue-light, 1);
