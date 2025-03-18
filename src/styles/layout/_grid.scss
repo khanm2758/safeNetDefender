@@ -1,40 +1,85 @@
 /* layout max-width */
 .row {
-    max-width: $grid-width;
-    margin: 0 auto;
-    color: #494848;
-    
+  max-width: $grid-width;
+  margin: 0 auto;
+  color: #494848;
+
+ //1280
+ @include respond(tab-land-max-1280){
+  max-width: 100rem;
+ }
+ @include respond(tab-port-max-980){
+  max-width: 90rem;
+ }
+  // 900px
+  @include respond(tab-port-max-900) {
+    max-width: 60rem;
   }
 
-  [class^="col-"]{
-    float: left;
-    
-    &:not(:last-child) {
-        margin-right: $gutter-horizontal;
-      }
+  @include respond(max-600){
+    max-width: 50rem;
   }
-  
-  /* About section row*/
-  .row > .col-1-of-2 {
-    width: calc((100% - $gutter-horizontal) / 2);
-    height: 23rem;
-  
-  
+ 
+}
+
+[class^="col-"] {
+  float: left;
+
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+
+
+    // 900px
+    @include respond(tab-port-max-900) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
-  
-  /* feature section row */
-  .row > .col-1-of-4 {
-    width: calc((100% - 3 * $gutter-horizontal) / 4);
-    
-  
+
+ 
+
+  // 900px
+  @include respond(tab-port-max-900) {
+    width: 100% !important;
    
   }
-  
-  /* product tour row */
-  .row > .col-1-of-3 {
-    
-    width: calc((100% - 2 * $gutter-horizontal) / 3);
-  
-   
+  // 600px
+  @include respond(max-600){
+    width: 100%;
   }
+}
+
+/* About section row*/
+.row > .col-1-of-2 {
+  width: calc((100% - $gutter-horizontal) / 2);
+  height: auto;
   
+  
+
+  
+}
+.row > .width-change{
+   margin-right: 0rem;
+   float: right;
+}
+
+
+/* feature section row */
+.row > .col-1-of-4 {
+  width: calc((100% - 3 * $gutter-horizontal) / 4);
+  height: auto;
+
+  // 980px
+  @include respond(tab-port-max-980) {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;;
+  }
+}
+
+/* product tour row */
+.row > .col-1-of-3 {
+  width: calc((100% - 2 * $gutter-horizontal) / 3);
+  height: auto;
+}

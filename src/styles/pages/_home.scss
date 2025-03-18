@@ -9,8 +9,12 @@
   margin-top: -20vh;
   padding: 25rem 0;
 
+  @include respond(tab-land-max-1280){
+    padding-bottom: 0rem;
+    margin-bottom: -15rem;
+  }
   @include respond(tab-port-max-900){
-    margin-top: -8vh;
+    //margin-top: -8vh;
   }
 }
 
@@ -45,6 +49,12 @@
   background-color: $color-gray-light;
 
   padding: 20rem 0 70rem 0;
+  @include respond(tab-land-max-1280){
+    padding: 15rem 0 18rem 0;
+  }
+  @include respond(tab-port-max-900){
+    padding: 15rem 0 18rem 0;
+  }
 }
 
 // story section
@@ -95,14 +105,40 @@
     url("https://images.pexels.com/photos/333837/pexels-photo-333837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: 100%;
   background-position: 50% 88%;
-  height: 60vh;
+  
+  height: auto;
   padding: 4rem;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-
+  @include respond(tab-land-max-1280){
+    background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 65%,
+      transparent 65%
+    ),
+    url("https://images.pexels.com/photos/333837/pexels-photo-333837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+  }
+  @include respond(max-600){
+   // padding: .5rem;
+    background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 100%,
+      
+    ),
+    url("https://images.pexels.com/photos/333837/pexels-photo-333837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  }
   &__form {
     width: 50%;
     padding: 2rem;
+    @include respond(tab-land-max-1280){
+    width: 65%;
+    }
+    @include respond(max-600){
+      width: 100%;
+    }
   }
 }
 

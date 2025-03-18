@@ -10,6 +10,11 @@
   position: relative;
   height: 56rem;
 
+  // @include respond(tab-port-max-900) {
+  //   width: 57%;
+  //   margin: 0 auto;
+  // }
+
   &__side {
     height: inherit;
     transition: all 0.8s ease;
@@ -33,9 +38,8 @@
       &-color-1 {
         background-image: linear-gradient(
           to right top,
-        rgba(183, 138, 104, 0.8),
-        rgba(183, 138, 104, 0.5),
-       
+          rgba(183, 138, 104, 0.8),
+          rgba(183, 138, 104, 0.5)
         );
       }
 
@@ -43,8 +47,7 @@
         background-image: linear-gradient(
           to left bottom,
           rgba(255, 44, 44, 0.5),
-          rgba(255, 44, 44, 0.8),
-          
+          rgba(255, 44, 44, 0.8)
         );
       }
 
@@ -52,7 +55,7 @@
         background-image: linear-gradient(
           to left bottom,
           hsla(29, 85%, 50%, 0.5),
-          hsla(29, 85%, 50%, 0.702),
+          hsla(29, 85%, 50%, 0.702)
         );
       }
     }
@@ -112,8 +115,6 @@
     top: 12rem;
     right: 2rem;
     width: 68%;
-
-    
   }
 
   &__heading-span {
@@ -143,7 +144,6 @@
     }
   }
 
-
   &__details {
     padding: 3rem;
     ul {
@@ -166,18 +166,81 @@
     @include centerInBlock;
     width: 90%;
     text-align: center;
-
-   
   }
-  &__cta-info{
+  &__cta-info {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
   }
-  &__cta-title{
+  &__cta-title {
     font-weight: 700;
   }
-  &__cta-pricing{
+  &__cta-pricing {
     font-weight: 300;
+  }
+
+
+
+///////////////////////////////////////
+  @include respond(tab-port-max-900){
+   
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  
+   
+  
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+     
+  
+     
+  
+      &--back {
+        transform: rotateY(0deg);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+       
+      }
+    }
+  
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+    &:hover &__side--back {
+      transform: rotateY(0deg);
+    }
+  
+   
+  
+    // card front side styling
+   
+  
+    
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding-top: 7rem;
+      padding: 4rem;
+      
+    }
+    &__cta-info {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    &__cta-title {
+      font-weight: 700;
+    }
+    &__cta-pricing {
+      font-weight: 300;
+    }
   }
 }

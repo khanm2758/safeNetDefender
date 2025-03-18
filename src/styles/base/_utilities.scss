@@ -3,6 +3,15 @@
 }
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+
+  @include respond(tab-port-max-900){
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  @include respond(max-600){
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
 }
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
@@ -14,6 +23,8 @@
 // fonts sizes
 .font-size--large {
   font-size: 8rem;
+
+ 
 }
 .font-size--medium {
   font-size: 6rem;

@@ -17,7 +17,7 @@ html {
   @include respond(tab-land-max-1280){
     font-size: 56.25%; // 1rem = 9px | 9px / 16px = 56.25%
   }
-  // 900px
+  //900px
   @include respond(tab-port-max-900){
     font-size: 50%; // 1rem = 8px | 8px / 16px = 50%
   }
@@ -30,13 +30,13 @@ html {
 }
 body {
   box-sizing: border-box;
-  //padding: 2rem;
+  padding: 2rem;
   
-  overflow-x: hidden;
+  
     // 900px
     @include respond(tab-port-max-900){
-      padding: 0rem; // 1rem = 8px | 8px / 16px = 50%
-      overflow-x: hidden;
+      padding: 0rem; 
+      
     }
   
 }
