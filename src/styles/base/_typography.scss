@@ -45,14 +45,7 @@ body {
       word-spacing: 0rem;
       
     }
-    @include respond(max-393){
-      font-size: 2.2rem;
-     
-      
-    }
-    @include respond(max-360){
-      font-size: 2rem;
-    }
+    
 
   }
   &__sub {
