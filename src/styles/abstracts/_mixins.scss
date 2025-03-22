@@ -35,8 +35,8 @@ min-width: lower to higher (Mobile first)
   @if($breakpoint == max-360){
     @media(max-width: 22.5em){@content}; // 360px/16px = 22.5em
   }
-  @if($breakpoint == max-479){
-    @media(max-width: 29.9375em){@content}; // 479px/16px = 29.9375em
+  @if($breakpoint == max-418){
+    @media(max-width: 26.125em){@content}; // 418px/16px = 26.125em
   }
   
   @if($breakpoint == max-600){
