@@ -49,6 +49,10 @@ body {
     }
   
 }
+::selection{
+  background-color: $color-blue-light;
+  color: $color-white
+}
 .clearfix::after {
   content: "";
   clear: both;
