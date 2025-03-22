@@ -33,26 +33,26 @@ min-width: lower to higher (Mobile first)
   // transform "px" to "em" where 1em = 16px
 
   @if($breakpoint == max-360){
-    @media(max-width: 22.5em){@content}; // 360px/16px = 22.5em
+    @media only screen and(max-width: 22.5em){@content}; // 360px/16px = 22.5em
   }
   @if($breakpoint == max-418){
-    @media(max-width: 26.125em){@content}; // 418px/16px = 26.125em
+    @media only screen and(max-width: 26.125em){@content}; // 418px/16px = 26.125em
   }
   
   @if($breakpoint == max-600){
-    @media(max-width: 37.5em){@content}; // 600px/16px = 37.5em
+    @media only screen and (max-width: 37.5em){@content}; // 600px/16px = 37.5em
   }
   @if($breakpoint == tab-port-max-980){
-    @media(max-width: 61.25em){@content}; // 980px/16px = 61.25em
+    @media only screen and(max-width: 61.25em){@content}; // 980px/16px = 61.25em
   }
   @if($breakpoint == tab-port-max-900){
-    @media(max-width: 56.25em){@content}; // 900px/16px = 56.25em
+    @media only screen and(max-width: 56.25em){@content}; // 900px/16px = 56.25em
   }
   @if($breakpoint == tab-land-max-1280){
-    @media(max-width: 80em){@content}; // 1280px/16px = 80em
+    @media only screen and(max-width: 80em){@content}; // 1280px/16px = 80em
   }
   @if($breakpoint == desktop-min-1921){
-    @media(min-width: 120.0625em){@content}; // 1921px/16px = 120.0625em
+    @media only screen and(min-width: 120.0625em){@content}; // 1921px/16px = 120.0625em
   }
   
 }
